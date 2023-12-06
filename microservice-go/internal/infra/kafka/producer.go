@@ -6,7 +6,7 @@ type Producer struct {
 	ConfigMap *ckafka.ConfigMap
 }
 
-func newKafkaProducer(configMap *ckafka.ConfigMap) *Producer {
+func NewKafkaProducer(configMap *ckafka.ConfigMap) *Producer {
 	return &Producer{
 		ConfigMap: configMap,
 	}
